@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 	
 	<title>ICS Lib</title>
-	<link rel="icon" type="image/png" href="<?php echo base_url(); ?>assets/images/Book.ico"/>
+	<link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/Book.ico">
 
 	<!-- CSS Links -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
@@ -149,7 +149,35 @@
 													<h3 class="panel-title">Account History</h3>
 												</div>
 												<div class="panel-body">
-													Panel content
+													
+												<!-- table -->	
+													
+												<table class="table table-condensed table-hover">
+													<thead>
+													<tr>
+														<th>Log</th>
+														<th>Date</th>
+														<th>Status</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<td>Borrow Book</td>
+														<td>01/01/01</td>
+														<td>Reserved</td>
+													</tr>
+													<tr class="success">
+														<td>Some Stuff</td>
+														<td>02/02/02</td>
+														<td>Borrowed</td>						
+													</tr>
+													<tr class="danger">
+														<td>Deadline Stuff</td>
+														<td>03/03/03</td>
+														<td>Deadline Exceeded</td>
+													</tr>
+													</tbody>
+												</table>
 												</div>
 											</div>
 											
@@ -169,9 +197,39 @@
 						</p>
 					</div>
 					<div class="tab-pane" id="panel-3">
-						<p>
-							News
-						</p>
+						
+						<div class="carousel slide" id="carousel-671212">
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-671212"></li>
+								<li data-slide-to="1" data-target="#carousel-671212"></li>
+								<li data-slide-to="2" data-target="#carousel-671212"></li>
+							</ol>
+						<div class="carousel-inner">
+							<div class="item active">
+								<img alt="" src="http://lorempixel.com/1600/500/" />
+							<div class="carousel-caption">
+								<h4>First Image</h4>
+							<p>Some Label Here</p>
+							</div>
+							</div>
+							<div class="item">
+								<img alt="" src="http://lorempixel.com/1600/500/" />
+							<div class="carousel-caption">
+							<h4>Second Image</h4>
+							<p>Some Label For Image 2</p>
+							</div>
+							</div>
+							<div class="item">
+								<img alt="" src="http://lorempixel.com/1600/500/" />
+							<div class="carousel-caption">
+							<h4>Third Image :)</h4>
+							<p>Some Last Labels</p>
+							</div>
+							</div>
+						</div> 
+						<a class="left carousel-control" href="#carousel-671212" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-671212" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+						</div>
+						
 					</div>
 					<div class="tab-pane" id="panel-4">
 						
